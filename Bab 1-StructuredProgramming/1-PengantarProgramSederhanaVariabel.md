@@ -120,7 +120,7 @@ int main() {
 	int number = 42;
 	float real = 3.14;
 
-	printf("Your Variables: %s %d %f \n", name, number, real);
+	printf("Your Variables: %s %d    AZSXDCF%f \n", name, number, real);
 	// Pada compiler modern, return pada main() tidak harus dituliskan
 	// Referensikan ke perintah dosen kalian mengenai penulisan return pada main()
 }
