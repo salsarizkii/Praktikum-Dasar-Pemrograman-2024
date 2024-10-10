@@ -5,6 +5,7 @@
 
 Break digunakan untuk keluar/berhenti dari suatu perulangan sebelum saatnya perulangan tersebut selesai. Break dapat digunakan pada semua jenis perulangan (for, while, do...while) dan juga switch case.
 
+```c
     int i = 0;
     while(i<10) {
         printf("hallo saya berhasil dijalankan\n");
@@ -13,6 +14,7 @@ Break digunakan untuk keluar/berhenti dari suatu perulangan sebelum saatnya peru
             break;
 
     }
+```
 
 Output
 
@@ -27,7 +29,7 @@ Output
 ## Continue
 
 Continue digunakan untuk melakukan skip atau melompati suatu iterasi dan melanjutkan ke iterasi selanjutnya.
-
+```c
     int i = 0;
     while(i<10) {
         printf("perulangan ke %d kali\n",i);
@@ -35,6 +37,7 @@ Continue digunakan untuk melakukan skip atau melompati suatu iterasi dan melanju
         if(i==6) 
             continue;
     }
+```
 
 Output
 

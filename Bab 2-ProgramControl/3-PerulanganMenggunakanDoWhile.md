@@ -4,20 +4,22 @@ Merupakan bentuk variasi dari `while` loop. Cara kerja dari `do...while` mirip d
 
 
 Perhatikan potongan kode dibawah ini
-    
+```c
     int i = 0;
     while(i>0) {
         printf("saya berhasil dijalankan");
         i++;
     }
-
+```
 Saat potongan kode dijalankan maka tidak ada nilai yang ditampilkan pada terminal, hal ini dikarenakan kondisi yang dimasukan pada `while` bernilai false. Bandingkan dengan potongan kode `do...while` dibawah ini
 
+```c
     int i = 0;
     do {
         printf("saya berhasil dijalankan");
         i++;
     } while(i>0);
+```
 
 Output
 
