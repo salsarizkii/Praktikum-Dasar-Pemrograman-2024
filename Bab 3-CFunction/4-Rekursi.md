@@ -4,24 +4,6 @@
 
 Secara sederhana, rekursi adalah suatu perilaku di mana suatu fungsi **memanggil dirinya sendiri**
 
-Coba perhatikan kode di bawah:
-
-```c
-#include <stdio.h>
-
-void quack() {
-    printf("Quack!\n");
-    quack(); /* memanggil dirinya sendiri */
-}
-
-int main() {
-    quack();
-    return 0;
-}
-```
-
-Bagaimana output dari program di atas menurut prediksi anda?
-
 ## Base Case
 
 Supaya tidak terjadi **infinite loop**, maka perlu adanya **base case** untuk menghentikan proses rekursi yang sedang berjalan. Kode di atas dapat dimodifikasi menjadi:
@@ -29,32 +11,25 @@ Supaya tidak terjadi **infinite loop**, maka perlu adanya **base case** untuk me
 ```c
 #include <stdio.h>
 
-/* tambahkan parameter `n` */
-void quack(int n) {
-    /* ini merupakan base case (ketika n == 0, maka rekursi berhenti) */
+// Fungsi untuk menghitung faktorial secara rekursif
+int faktorial(int n) {
+    // Jika n adalah 0, faktorialnya 1 (dasar rekursi)
     if (n == 0) {
-        return;
+        return 1;
+    } else {
+        // Panggil diri sendiri dengan n-1
+        return n * faktorial(n - 1);
     }
-
-    printf("Quack!\n");
-    quack(n - 1); /* nilai n dikurangi terus untuk setiap pemanggilan terhadap dirinya */
 }
 
 int main() {
-    /* Tampilkan Quack! sebanyak lima kali */
-    quack(5);
+    int angka = 5; // Angka yang akan dihitung faktorialnya
+    int hasil = faktorial(angka); // Memanggil fungsi faktorial
+    printf("Faktorial dari %d adalah %d\n", angka, hasil);
     return 0;
 }
 
-/*
-Output:
-
-Quack!
-Quack!
-Quack!
-Quack!
-Quack!
-*/
+// Faktorial dari 5 adalah 120
 ```
 
 ## Contoh Kasus
