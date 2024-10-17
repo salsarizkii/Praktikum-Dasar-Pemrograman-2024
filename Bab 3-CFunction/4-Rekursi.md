@@ -82,4 +82,34 @@ Analisis rekursi di atas untuk `n = 5` yaitu:
 
 Sehingga hasilnya 15 untuk n = 5 dan memenuhi 1+2+3+4+5 = 15
 
+## Contoh lain (Fibonacci)
+
+```c
+#include <stdio.h>
+
+// Fungsi untuk menghitung bilangan Fibonacci secara rekursif
+int fibonacci(int n) {
+    // Jika n adalah 0, hasilnya 0
+    if (n == 0) {
+        return 0;
+    }
+    // Jika n adalah 1, hasilnya 1
+    else if (n == 1) {
+        return 1;
+    } 
+    // Panggil diri sendiri untuk menghitung Fibonacci dari n-1 dan n-2
+    else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}
+
+int main() {
+    int angka = 6; // Angka yang ingin kita cari bilangan Fibonacci-nya
+    int hasil = fibonacci(angka); // Memanggil fungsi Fibonacci
+    printf("Bilangan Fibonacci ke-%d adalah %d\n", angka, hasil);
+    return 0;
+}
+
+```
+
 [Menuju Daftar Materi >>](../DaftarMateri.md)
