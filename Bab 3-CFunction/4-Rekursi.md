@@ -5,6 +5,8 @@
 Secara sederhana, rekursi adalah suatu perilaku di mana suatu fungsi **memanggil dirinya sendiri**
 
 ## Base Case
+Base case adalah kondisi yang membuat fungsi berhenti memanggil dirinya sendiri.
+Base case harus ada agar fungsi rekursif tidak terus memanggil dirinya sendiri
 
 Supaya tidak terjadi **infinite loop**, maka perlu adanya **base case** untuk menghentikan proses rekursi yang sedang berjalan. Kode di atas dapat dimodifikasi menjadi:
 
