@@ -9,7 +9,7 @@
 
 - Salsa Rizki Saputri (Informatika 2022) [Github](https://github.com/salsarizkii)
 
-- Muhammad Muflih Affandi (Sains Data 2023) [Github Coming Soon]
+- Muhammad Muflih Affandi (Sains Data 2023) [Github](https://github.com/MuhammadAffandi24)
 
 
 <br>
